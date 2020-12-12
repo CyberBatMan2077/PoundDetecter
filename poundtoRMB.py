@@ -4,7 +4,7 @@ import re
 
 
 def getnumber():
-	html = urlopen("https://www.baidu.com/s?ie=UTF-8&wd=%E8%8B%B1%E9%95%91%E6%B1%87%E7%8E%87")
+	html = urlopen("http://www.baidu.com/s?ie=UTF-8&wd=%E8%8B%B1%E9%95%91%E6%B1%87%E7%8E%87")
 
 	bsObj = BeautifulSoup(html, "html.parser")
 	# tables = bsObj.findAll("script", {"data-compress": {"off"}})
