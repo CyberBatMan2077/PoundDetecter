@@ -11,7 +11,7 @@ def getnumber():
 		data = bsObj.find("div", {"class": {"op_exrate_result"}})
 		number = re.findall(r"[1-9]+\.+[0-9]+", data.get_text())
 
-	except AttributeError:
+	except Exception as e:
 		number = None
 
 	if number is not None:
